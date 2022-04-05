@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group>
+       <item
+           android:id="@+id/option1"
+           android:title="Inicio"
+           android:icon="@drawable/home_circle"
+           />
+       <item
+           android:id="@+id/option2"
+           android:title="Abecedario"
+           android:icon="@drawable/order_alphabetical_ascending"
+           />
+       <item
+           android:id="@+id/option3"
+           android:title="Traducir por voz"
+           android:icon="@drawable/microphone"
+           />
+   </group>
+
+</menu>

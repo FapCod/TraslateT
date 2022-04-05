@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TraslateT</string>
+    <string name="app_title">Traductor para personas sordas</string>
+    <string name="btn_traducir">Traducir</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="text_hablar">Hablar</string>
+    <string name="text_traducir">Ingresa aqui tu texto a traducir</string>
+    <!-- para el navegador    -->
+    <string name="navigation_drawer_open">OPEN</string>
+    <string name="navigation_drawer_close">CLOSE</string>
+    <string name="caracteresaceptables">áóéíúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ 1234567890</string>
+
+</resources>
