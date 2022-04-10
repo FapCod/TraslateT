@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
                startActivity(intent);
            }
            R.id.cardViewSobreNosotros-> {
-               Toast.makeText(this,"Sobre Nosotros",Toast.LENGTH_SHORT).show();
+               val intent = Intent(this,AboutUsActivity::class.java);
+               startActivity(intent);
            }
 
 
@@ -53,12 +54,10 @@ class MainActivity : AppCompatActivity() {
             R.id.option2 ->{
                         val intent= Intent(this,AlphabetActivity::class.java);
                         startActivity(intent);
-//                Toast.makeText(this,"Opcion 2",Toast.LENGTH_SHORT).show();
                     }
             R.id.option3 ->{
                         val intent= Intent(this,TraslateWriteActivity::class.java);
                         startActivity(intent);
-//                Toast.makeText(this,"Opcion 3",Toast.LENGTH_SHORT).show();
                     }
 
                 }

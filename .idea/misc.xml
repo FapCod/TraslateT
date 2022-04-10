@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/borderedondo.xml" value="0.2275" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/ear_hearing.xml" value="0.242" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/ear_hearing_off.xml" value="0.2345" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/heart_multiple.xml" value="0.214" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/home_circle.xml" value="0.251" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/ic_wave.xml" value="0.233" />
@@ -13,10 +15,14 @@
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/order_alphabetical_ascending.xml" value="0.214" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/drawable/traducir.xml" value="0.214" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/action_bar_toolbar.xml" value="0.422613531047266" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_about_us.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_alphabet.xml" value="0.2" />
-        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_choose.xml" value="0.264" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_no_listener.xml" value="0.2" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_sign_language.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_splash.xml" value="0.25" />
-        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_traslate_voice.xml" value="0.2" />
+        <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_traslate_voice.xml" value="0.152" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_traslate_write.xml" value="0.264" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/layout/activity_traslatewrite.xml" value="0.25" />
         <entry key="..\:/Users/FapCod/AndroidStudioProjects/TraslateT/app/src/main/res/menu/menu_contextual.xml" value="0.264" />

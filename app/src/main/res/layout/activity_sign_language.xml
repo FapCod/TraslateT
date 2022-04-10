@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/traslateWrite"
-    tools:context=".TraslateWriteActivity">
-
+    android:id="@+id/noOyente"
+    tools:context=".SignLanguageActivity">
     <include
         android:id="@+id/include"
         layout="@layout/action_bar_toolbar" />
@@ -99,7 +98,4 @@
         </GridLayout>
 
     </ScrollView>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

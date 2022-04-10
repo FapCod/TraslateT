@@ -94,8 +94,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alignmentMode="alignBounds"
-            android:columnCount="7"
-            android:rowCount="8"
+            android:columnCount="8"
+            android:rowCount="40"
             >
 
         </GridLayout>
