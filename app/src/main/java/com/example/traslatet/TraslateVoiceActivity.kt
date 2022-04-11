@@ -78,8 +78,7 @@ class TraslateVoiceActivity : AppCompatActivity() {
 //                Toast.makeText(this,"Opcion 2",Toast.LENGTH_SHORT).show();
             }
             R.id.option3 -> {
-                val intent = Intent(this, TraslateWriteActivity::class.java);
-                startActivity(intent);
+                Toast.makeText(this, "Estas en Traducir con Voz", Toast.LENGTH_SHORT).show();
 //                Toast.makeText(this,"Opcion 3",Toast.LENGTH_SHORT).show();
             }
 

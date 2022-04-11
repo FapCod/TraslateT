@@ -49,7 +49,7 @@ class TraslateWriteActivity : AppCompatActivity() {
 //                Toast.makeText(this,"Opcion 2",Toast.LENGTH_SHORT).show();
             }
             R.id.option3 -> {
-                val intent = Intent(this, TraslateWriteActivity::class.java);
+                val intent = Intent(this, TraslateVoiceActivity::class.java);
                 startActivity(intent);
 //                Toast.makeText(this,"Opcion 3",Toast.LENGTH_SHORT).show();
             }

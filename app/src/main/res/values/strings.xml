@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TraslateT</string>
+    <string name="app_name">Traslate S&amp;M</string>
     <string name="app_title">Traductor para personas sordas</string>
     <string name="btn_traducir">Traducir</string>
     <string name="btn_cancelar">Cancelar</string>
@@ -9,6 +9,6 @@
     <!-- para el navegador    -->
     <string name="navigation_drawer_open">OPEN</string>
     <string name="navigation_drawer_close">CLOSE</string>
-    <string name="caracteresaceptables">áóéíúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ 1234567890</string>
+    <string name="caracteresaceptables">ÓÚÁÉÍáóéíúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ 1234567890</string>
 
 </resources>

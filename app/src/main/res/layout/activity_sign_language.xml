@@ -41,61 +41,435 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
 
-
-    <EditText
-        android:id="@+id/editTextwrite"
-        android:layout_width="400dp"
-        android:layout_height="90dp"
-        android:background="@drawable/borderedondo"
-        android:fontFamily="@font/codec_cold_bold_trial"
-        android:hint="Ingresa tu texto para traducir a lenguaje de señas Peruano."
-        android:digits="@string/caracteresaceptables"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:textColor="@color/textoEscribir"
-        android:textColorHint="#BAB9B9"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-
-    <Button
-        android:id="@+id/buttonwrite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/borderedondo"
-        android:fontFamily="@font/codec_cold_bold_trial"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="Traducir texto"
-        android:textColor="@color/textoEscribir"
-        app:layout_constraintEnd_toEndOf="@+id/editTextwrite"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextwrite" />
+    //her code
 
     <ScrollView
-        android:layout_width="383dp"
+        android:id="@+id/scrollLS"
+        android:layout_width="380dp"
         android:layout_height="312dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/borderedondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonwrite"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0">
-
         <GridLayout
-            android:id="@+id/contenedor"
+            android:id="@+id/contenedorLS"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alignmentMode="alignBounds"
             android:columnCount="8"
-            android:rowCount="40"
-            >
-
+            android:rowCount="40">
         </GridLayout>
-
     </ScrollView>
+
+    //second scroll
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/borderedondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollLS"
+        app:layout_constraintStart_toStartOf="@+id/scrollLS"
+        app:layout_constraintTop_toBottomOf="@+id/scrollLS">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSobreNosotros"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="listening"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cardViewTeclado"
+                    app:layout_constraintEnd_toEndOf="@+id/cardViewAbecedario"
+                    app:layout_constraintStart_toStartOf="@+id/cardViewAbecedario"
+                    app:layout_constraintTop_toTopOf="@+id/cardViewTeclado">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ear_hearing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/oldsansblack"
+                            android:text="TRADUCIR"
+                            android:textColor="@color/color_texto"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/keyboardparentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+                    //numeros
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="1" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="2" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="3" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="4" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="5" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="6" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="7" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="8" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="9" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/a"-->
+<!--                            android:text="0" />-->
+<!--                    </LinearLayout>-->
+                    //end numeros
+
+                    //letters
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/q"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/q"
+                            android:tag="Q" />
+
+                        <ImageView
+                            android:id="@+id/w"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/w"
+                            android:tag="W" />
+
+                        <ImageView
+                            android:id="@+id/e"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/e"
+                            android:tag="E" />
+
+                        <ImageView
+                            android:id="@+id/r"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/r"
+                            android:tag="R" />
+
+                        <ImageView
+                            android:id="@+id/t"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/t"
+                            android:tag="T" />
+
+                        <ImageView
+                            android:id="@+id/y"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/y"
+                            android:tag="Y" />
+
+                        <ImageView
+                            android:id="@+id/u"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/u"
+                            android:tag="U" />
+
+                        <ImageView
+                            android:id="@+id/i"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/i"
+                            android:tag="I" />
+
+                        <ImageView
+                            android:id="@+id/o"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/o"
+                            android:tag="O" />
+
+                        <ImageView
+                            android:id="@+id/p"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/p"
+                            android:tag="P" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/a"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/a"
+                            android:tag="A" />
+
+                        <ImageView
+                            android:id="@+id/s"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/s"
+                            android:tag="S" />
+
+                        <ImageView
+                            android:id="@+id/d"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/d"
+                            android:tag="D" />
+
+                        <ImageView
+                            android:id="@+id/f"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/f"
+                            android:tag="F" />
+
+                        <ImageView
+                            android:id="@+id/g"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/g"
+                            android:tag="G" />
+
+                        <ImageView
+                            android:id="@+id/h"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/h"
+                            android:tag="H" />
+
+                        <ImageView
+                            android:id="@+id/j"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/j"
+                            android:tag="J" />
+
+                        <ImageView
+                            android:id="@+id/k"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/k"
+                            android:tag="K" />
+
+                        <ImageView
+                            android:id="@+id/l"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/l"
+                            android:tag="L" />
+
+                        <ImageView
+                            android:id="@+id/nn"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/nn"
+                            android:tag="Ñ" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/z"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/z"
+                            android:tag="Z" />
+
+                        <ImageView
+                            android:id="@+id/x"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/x"
+                            android:tag="X" />
+
+                        <ImageView
+                            android:id="@+id/c"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/c"
+                            android:tag="C" />
+
+                        <ImageView
+                            android:id="@+id/v"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/v"
+                            android:tag="V" />
+
+                        <ImageView
+                            android:id="@+id/b"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/b"
+                            android:tag="B" />
+
+                        <ImageView
+                            android:id="@+id/n"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/n"
+                            android:tag="N" />
+
+                        <ImageView
+                            android:id="@+id/m"
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/m"
+                            android:tag="M" />
+
+                        <Button
+                            android:id="@+id/back"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:textSize="20sp"
+                            android:text="🧹"
+                            android:background="@drawable/borderedondo"
+                            android:onClick="delete" />
+                        <!--                            android:src="@drawable/ic_backspace_black_24dp"-->
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_fondo"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+<!--                        <Button-->
+<!--                            android:id="@+id/comma"-->
+<!--                            android:layout_width="35dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/borderedondo"-->
+<!--                            android:text=","-->
+<!--                            android:textColor="@color/white" />-->
+
+                        <Button
+                            android:id="@+id/spacebar"
+                            android:onClick="space"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/borderedondo"
+                            android:tag=" "
+                            android:text="______"
+                            />
+
+<!--                        <Button-->
+<!--                            android:id="@+id/dot"-->
+<!--                            android:layout_width="35dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/borderedondo"-->
+<!--                            android:text="."-->
+<!--                            android:textColor="@color/white" />-->
+                    </LinearLayout>
+                    //end letters
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    //end second scroll
+
+
+
+    //end code
 </androidx.constraintlayout.widget.ConstraintLayout>

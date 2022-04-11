@@ -16,54 +16,55 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Toolbar
-        MyToolbar().show(this,"Inicio",false);
+        MyToolbar().show(this, "Inicio", false);
 
     }
-   fun viewClicked(v:View) {
-       when (v.getId()) {
-           R.id.cardViewTraductorVoz-> {
-               val intent = Intent(this,TraslateVoiceActivity::class.java);
-               startActivity(intent);
-           }
-           R.id.cardViewAbecedario-> {
-               val intent = Intent(this,AlphabetActivity::class.java);
-               startActivity(intent);
-           }
-           R.id.cardViewTeclado-> {
-               val intent = Intent(this,TraslateWriteActivity::class.java);
-               startActivity(intent);
-           }
-           R.id.cardViewSobreNosotros-> {
-               val intent = Intent(this,AboutUsActivity::class.java);
-               startActivity(intent);
-           }
 
-
-       }
-   }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-                menuInflater.inflate(R.menu.menu_contextual,menu);
-                return super.onCreateOptionsMenu(menu)
+    fun viewClicked(v: View) {
+        when (v.getId()) {
+            R.id.cardViewTraductorVoz -> {
+                val intent = Intent(this, TraslateVoiceActivity::class.java);
+                startActivity(intent);
             }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.option1 ->{
-                        Toast.makeText(this,"Estas en inicio",Toast.LENGTH_SHORT).show();
-                    }
-            R.id.option2 ->{
-                        val intent= Intent(this,AlphabetActivity::class.java);
-                        startActivity(intent);
-                    }
-            R.id.option3 ->{
-                        val intent= Intent(this,TraslateWriteActivity::class.java);
-                        startActivity(intent);
-                    }
-
-                }
-                return super.onOptionsItemSelected(item)
+            R.id.cardViewAbecedario -> {
+                val intent = Intent(this, AlphabetActivity::class.java);
+                startActivity(intent);
             }
-
+            R.id.cardViewTeclado -> {
+                val intent = Intent(this, TraslateWriteActivity::class.java);
+                startActivity(intent);
+            }
+            R.id.cardViewSobreNosotros -> {
+                val intent = Intent(this, AboutUsActivity::class.java);
+                startActivity(intent);
+            }
 
 
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_contextual, menu);
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.option1 -> {
+                Toast.makeText(this, "Estas en inicio", Toast.LENGTH_SHORT).show();
+            }
+            R.id.option2 -> {
+                val intent = Intent(this, AlphabetActivity::class.java);
+                startActivity(intent);
+            }
+            R.id.option3 -> {
+                val intent = Intent(this, TraslateVoiceActivity::class.java);
+                startActivity(intent);
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
+}
