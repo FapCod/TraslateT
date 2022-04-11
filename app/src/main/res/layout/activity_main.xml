@@ -125,35 +125,74 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewTeclado"
-        android:onClick="viewClicked"
-        app:cardElevation="14dp"
-        app:cardCornerRadius="8dp"
-        app:cardBackgroundColor="@color/white"
         android:layout_width="175dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
+        android:onClick="viewClicked"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="14dp"
         app:layout_constraintEnd_toEndOf="@+id/cardViewTraductorVoz"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/cardViewTraductorVoz"
         app:layout_constraintTop_toBottomOf="@+id/cardViewTraductorVoz">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_gravity="center_horizontal|center_vertical"
-            >
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/traducir"/>
+                android:src="@drawable/traducir" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/oldsansblack"
                 android:text="Con teclado"
                 android:textColor="@color/color_texto"
-                android:textSize="20sp"
-                android:fontFamily="@font/oldsansblack"/>
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewNumeros"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:onClick="viewClicked"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewTeclado"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewAbecedario"
+        app:layout_constraintStart_toEndOf="@+id/cardViewTeclado"
+        app:layout_constraintTop_toTopOf="@+id/cardViewTeclado">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/numeros" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oldsansblack"
+                android:text="Números"
+                android:textColor="@color/color_texto"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
@@ -161,34 +200,36 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSobreNosotros"
-        android:onClick="viewClicked"
-        app:cardElevation="14dp"
-        app:cardCornerRadius="8dp"
-        app:cardBackgroundColor="@color/white"
         android:layout_width="175dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cardViewTeclado"
-        app:layout_constraintEnd_toEndOf="@+id/cardViewAbecedario"
-        app:layout_constraintStart_toStartOf="@+id/cardViewAbecedario"
-        app:layout_constraintTop_toTopOf="@+id/cardViewTeclado">
+        android:layout_marginTop="16dp"
+        android:onClick="viewClicked"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/cardViewTeclado"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewTeclado">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_gravity="center_horizontal|center_vertical"
-            >
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/heart_multiple"/>
+                android:src="@drawable/heart_multiple" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/oldsansblack"
                 android:text="Sobre nosotros"
                 android:textColor="@color/color_texto"
-                android:textSize="20sp"
-                android:fontFamily="@font/oldsansblack"/>
+                android:textSize="20sp" />
 
 
         </LinearLayout>

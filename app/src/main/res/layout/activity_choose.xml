@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/oldsansblack"
-        android:text="Elige una opcion:"
+        android:text="Elige una opción:"
         android:textColor="@color/color_principal"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"

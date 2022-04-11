@@ -134,73 +134,83 @@
                     android:orientation="vertical">
                     //numeros
 
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginBottom="5dp"-->
-<!--                        android:gravity="center"-->
-<!--                        android:orientation="horizontal">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="1" />-->
+                        <ImageView
+                            android:id="@+id/uno"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/uno"
+                            android:tag="1" />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="2" />-->
+                        <ImageView
+                            android:id="@+id/dos"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/dos"
+                            android:tag="2"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="3" />-->
+                        <ImageView
+                            android:id="@+id/tres"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tres"
+                            android:tag="3"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="4" />-->
+                        <ImageView
+                            android:id="@+id/cuatro"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/cuatro"
+                            android:tag="4"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="5" />-->
+                        <ImageView
+                            android:id="@+id/cinco"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/cinco"
+                            android:tag="5"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="6" />-->
+                        <ImageView
+                            android:id="@+id/seis"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/seis"
+                            android:tag="6"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="7" />-->
+                        <ImageView
+                            android:id="@+id/siete"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/siete"
+                            android:tag="7"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="8" />-->
+                        <ImageView
+                            android:id="@+id/ocho"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ocho"
+                            android:tag="8"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="9" />-->
+                        <ImageView
+                            android:id="@+id/nueve"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/nueve"
+                            android:tag="9"  />
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="30dp"-->
-<!--                            android:src="@drawable/a"-->
-<!--                            android:text="0" />-->
-<!--                    </LinearLayout>-->
+                        <ImageView
+                            android:id="@+id/cero"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/cero"
+                            android:tag="0"  />
+                    </LinearLayout>
                     //end numeros
 
                     //letters

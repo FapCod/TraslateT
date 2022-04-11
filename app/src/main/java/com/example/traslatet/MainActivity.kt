@@ -38,8 +38,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, AboutUsActivity::class.java);
                 startActivity(intent);
             }
-
-
+            R.id.cardViewNumeros-> {
+                val intent = Intent(this, NumbersActivity::class.java);
+                startActivity(intent);
+            }
         }
     }
 

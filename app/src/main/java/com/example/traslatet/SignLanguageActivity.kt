@@ -52,6 +52,128 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
         val x = findViewById<ImageView>(R.id.x)
         val y = findViewById<ImageView>(R.id.y)
         val z = findViewById<ImageView>(R.id.z)
+        val uno = findViewById<ImageView>(R.id.uno)
+        val dos = findViewById<ImageView>(R.id.dos)
+        val tres = findViewById<ImageView>(R.id.tres)
+        val cuatro = findViewById<ImageView>(R.id.cuatro)
+        val cinco = findViewById<ImageView>(R.id.cinco)
+        val seis = findViewById<ImageView>(R.id.seis)
+        val siete = findViewById<ImageView>(R.id.siete)
+        val ocho = findViewById<ImageView>(R.id.ocho)
+        val nueve = findViewById<ImageView>(R.id.nueve)
+        val cero = findViewById<ImageView>(R.id.cero)
+
+
+        uno.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            uno.startAnimation(slideup)
+            cadena += uno.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.uno)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        dos.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            dos.startAnimation(slideup)
+            cadena += dos.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.dos)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        tres.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            tres.startAnimation(slideup)
+            cadena += tres.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.tres)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        cuatro.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            cuatro.startAnimation(slideup)
+            cadena += cuatro.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.cuatro)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        cinco.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            cinco.startAnimation(slideup)
+            cadena += cinco.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.cinco)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        seis.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            seis.startAnimation(slideup)
+            cadena += seis.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.seis)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        siete.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            siete.startAnimation(slideup)
+            cadena += siete.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.siete)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        ocho.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            ocho.startAnimation(slideup)
+            cadena += ocho.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.ocho)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        nueve.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            nueve.startAnimation(slideup)
+            cadena += nueve.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.nueve)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
+        cero.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_out)
+            cero.startAnimation(slideup)
+            cadena += cero.getTag().toString()
+            val imag = ImageView(this)
+            imag.setImageResource(R.drawable.cero)
+            val ancho = 125
+            val alto = 150
+            fila.addView(imag, ancho, alto)
+        }
 
         a.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,

@@ -104,6 +104,36 @@ class TraslateWriteActivity : AppCompatActivity() {
             if (c.lowercaseChar()=='x'){ createIX(fila) }
             if (c.lowercaseChar()=='y'){ createIY(fila) }
             if (c.lowercaseChar()=='z'){ createIZ(fila) }
+            if (c.lowercaseChar() == '0') {
+                createI0(fila)
+            }
+            if (c.lowercaseChar() == '1') {
+                createI1(fila)
+            }
+            if (c.lowercaseChar() == '2') {
+                createI2(fila)
+            }
+            if (c.lowercaseChar() == '3') {
+                createI3(fila)
+            }
+            if (c.lowercaseChar() == '4') {
+                createI4(fila)
+            }
+            if (c.lowercaseChar() == '5') {
+                createI5(fila)
+            }
+            if (c.lowercaseChar() == '6') {
+                createI6(fila)
+            }
+            if (c.lowercaseChar() == '7') {
+                createI7(fila)
+            }
+            if (c.lowercaseChar() == '8') {
+                createI8(fila)
+            }
+            if (c.lowercaseChar() == '9') {
+                createI9(fila)
+            }
             if(c==' '){ createIEE(fila) }
 //            Toast.makeText(this, "" + c, Toast.LENGTH_SHORT).show();
         }
@@ -328,6 +358,87 @@ class TraslateWriteActivity : AppCompatActivity() {
         val alto = 150
         fila.addView(imag,ancho,alto)
     }
+    private fun createI1(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.uno)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI2(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.dos)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI3(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.tres)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI4(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.cuatro)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI5(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.cinco)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI6(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.seis)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI7(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.siete)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI8(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.ocho)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI9(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.nueve)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+    private fun createI0(fila4: GridLayout) {
+        val fila = fila4
+        val imag = ImageView(this)
+        imag.setImageResource(R.drawable.cero)
+        val ancho = 125
+        val alto = 150
+        fila.addView(imag, ancho, alto)
+    }
+
     private fun createIEE(fila4: GridLayout) {
         val fila= fila4
         val imag = ImageView(this)

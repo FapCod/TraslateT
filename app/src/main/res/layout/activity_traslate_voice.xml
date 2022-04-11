@@ -52,7 +52,7 @@
         android:layout_width="400dp"
         android:layout_height="90dp"
         android:background="@drawable/borderedondo"
-        android:fontFamily="@font/codec_cold_bold_trial"
+        android:fontFamily="@font/opensans_medium"
         android:hint="Audio obtenido."
         android:paddingLeft="10dp"
         android:paddingRight="10dp"

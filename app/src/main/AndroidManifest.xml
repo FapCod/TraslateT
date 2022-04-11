@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TraslateT">
         <activity
+            android:name=".NumbersActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".SignLanguageActivity"
             android:exported="false" />
         <activity
