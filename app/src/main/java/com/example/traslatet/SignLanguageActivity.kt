@@ -1,7 +1,10 @@
 package com.example.traslatet
 
+import android.content.Context
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Vibrator
 import android.speech.tts.TextToSpeech
 import android.view.View
 import android.view.WindowManager
@@ -63,6 +66,11 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
         val nueve = findViewById<ImageView>(R.id.nueve)
         val cero = findViewById<ImageView>(R.id.cero)
 
+        //vibracion
+        val vibrator:Vibrator
+        vibrator = getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+
+
 
         uno.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -74,6 +82,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         dos.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -85,6 +94,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         tres.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -96,6 +106,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         cuatro.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -107,6 +118,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         cinco.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -118,6 +130,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         seis.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -129,6 +142,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         siete.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -140,6 +154,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         ocho.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -151,6 +166,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         nueve.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -162,6 +178,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         cero.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -173,6 +190,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
 
         a.setOnClickListener {
@@ -185,7 +203,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
-
+            vibrator.vibrate(50)
 
         }
         b.setOnClickListener {
@@ -198,6 +216,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         c.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -209,6 +228,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         d.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -220,6 +240,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         e.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -231,6 +252,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         f.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -242,6 +264,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         g.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -253,6 +276,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         h.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -264,6 +288,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         i.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -275,6 +300,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         j.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -286,6 +312,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         k.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -297,6 +324,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         l.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -308,6 +336,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         m.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -319,6 +348,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         n.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -330,6 +360,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         nn.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -341,6 +372,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         o.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -352,6 +384,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         p.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -363,6 +396,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         q.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -374,6 +408,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         r.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -385,6 +420,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         s.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -396,6 +432,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         t.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -407,6 +444,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         u.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -418,6 +456,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         v.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -429,6 +468,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         w.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -440,6 +480,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         x.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -451,6 +492,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         y.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -462,6 +504,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
         z.setOnClickListener {
             val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -473,9 +516,11 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
             val alto = 150
             fila.addView(imag, ancho, alto)
+            vibrator.vibrate(50)
         }
 
         //end code
+
 
     }
     //funciones
@@ -489,6 +534,9 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             Toast.makeText(this,"Iniciacion fallida", Toast.LENGTH_SHORT).show()
         }
     }
+
+
+    //end music
 
     override fun onDestroy() {
         if (tts != null){
@@ -515,6 +563,9 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
     }
 
     fun delete(view: View){
+        //vibracion
+        val vibrator:Vibrator
+        vibrator = getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
         if (cadena.length<=0){
 //            Toast.makeText(this,"No hay nada para eliminar", Toast.LENGTH_SHORT).show();
         }else{
@@ -526,6 +577,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             fila1.removeViewAt(cadena.length-1)
             cadena = cadena.substring(0, cadena.length-1);
         }
+        vibrator.vibrate(50)
 //        Toast.makeText(this,cadena.length.toString(), Toast.LENGTH_SHORT).show();
     }
     private fun limpiar(){
@@ -534,6 +586,9 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
     }
 
     fun space(view: View){
+        //vibracion
+        val vibrator:Vibrator
+        vibrator = getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
         val fila= findViewById<GridLayout>(R.id.contenedorLS)
         val spacebar = findViewById<Button>(R.id.spacebar)
         val slideup = AnimationUtils.loadAnimation(applicationContext,
@@ -545,6 +600,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
             val ancho = 125
            val alto = 150
            fila.addView(imag, ancho, alto)
+        vibrator.vibrate(50)
     }
     //end funciones
 
