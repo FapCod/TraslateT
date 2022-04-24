@@ -49,8 +49,11 @@
 
     <EditText
         android:id="@+id/editTextvoice"
-        android:layout_width="400dp"
+        android:layout_width="360dp"
         android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/borderedondo"
         android:fontFamily="@font/opensans_medium"
         android:hint="Audio obtenido."
@@ -60,28 +63,32 @@
         android:textColorHint="#BAB9B9"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <Button
         android:id="@+id/buttonvoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/borderedondo"
+        android:drawableLeft="@drawable/microphonewhite"
         android:fontFamily="@font/oldsansblack"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Presiona para grabar"
-        android:drawableLeft="@drawable/microphonewhite"
         android:textColor="@color/textoVoz"
         app:layout_constraintEnd_toEndOf="@+id/editTextvoice"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextvoice" />
+
     <ScrollView
         android:id="@+id/scrollvoice"
         android:layout_width="383dp"
         android:layout_height="312dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/borderedondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,8 +102,7 @@
             android:layout_height="match_parent"
             android:alignmentMode="alignBounds"
             android:columnCount="8"
-            android:rowCount="40"
-            >
+            android:rowCount="40">
 
         </GridLayout>
 

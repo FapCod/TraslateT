@@ -13,7 +13,7 @@
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:background="@drawable/ic_wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/oldsansblack"
         android:text="💫Traducir con teclado💫"
         android:textColor="@color/color_title"
@@ -46,7 +46,7 @@
         android:id="@+id/scrollLS"
         android:layout_width="380dp"
         android:layout_height="312dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="27dp"
         android:background="@drawable/borderedondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="390dp"
         android:background="@drawable/borderedondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/scrollLS"
@@ -88,10 +88,9 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewSobreNosotros"
+                    android:id="@+id/cardViewEscuchar"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:onClick="listening"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="14dp"

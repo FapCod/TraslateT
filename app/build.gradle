@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -43,4 +46,8 @@ dependencies {
 
     //navegar toolbar
     implementation 'com.google.android.material:material:1.5.0'
+    //para publicidad
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    //compatibilidad para los celulares
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
 }

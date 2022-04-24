@@ -3,22 +3,38 @@ package com.example.traslatet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
 import android.widget.Toast
-import android.widget.Toolbar
+import com.example.traslatet.databinding.ActivityChooseBinding
+import com.example.traslatet.databinding.ActivityMainBinding
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.interstitial.InterstitialAd
+
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         //Toolbar
         MyToolbar().show(this, "Inicio", false);
+        initLoadAds()
 
     }
+//publicidad
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerPrincipal.loadAd(adRequest)
+    }
+//    end publicidad
+
+
+
+
 
     fun viewClicked(v: View) {
         when (v.getId()) {
@@ -38,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, AboutUsActivity::class.java);
                 startActivity(intent);
             }
-            R.id.cardViewNumeros-> {
+            R.id.cardViewNumeros -> {
                 val intent = Intent(this, NumbersActivity::class.java);
                 startActivity(intent);
             }

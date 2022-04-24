@@ -45,26 +45,29 @@
 
     <EditText
         android:id="@+id/editTextwrite"
-        android:layout_width="400dp"
+        android:layout_width="360dp"
         android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/borderedondo"
+        android:digits="@string/caracteresaceptables"
         android:fontFamily="@font/opensans_medium"
         android:hint="Ingresa tu texto para traducir a lenguaje de señas Peruano."
-        android:digits="@string/caracteresaceptables"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="@color/textoEscribir"
         android:textColorHint="#BAB9B9"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
     <Button
         android:id="@+id/buttonwrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/borderedondo"
         android:fontFamily="@font/oldsansblack"
         android:paddingLeft="10dp"
@@ -79,7 +82,9 @@
     <ScrollView
         android:layout_width="383dp"
         android:layout_height="312dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/borderedondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,8 +98,7 @@
             android:layout_height="match_parent"
             android:alignmentMode="alignBounds"
             android:columnCount="8"
-            android:rowCount="40"
-            >
+            android:rowCount="40">
 
         </GridLayout>
 

@@ -13,6 +13,7 @@ import android.widget.Button
 import android.widget.GridLayout
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import java.util.*
 
 class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
@@ -521,7 +522,20 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
 
         //end code
 
+        animarBoton()
 
+    }
+    private fun animarBoton(){
+        val vibrator:Vibrator
+        vibrator = getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        val escuchar = findViewById<CardView>(R.id.cardViewEscuchar)
+        escuchar.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_outbtn)
+            escuchar.startAnimation(slideup)
+            vibrator.vibrate(10)
+            listening(escuchar)
+        }
     }
     //funciones
     override fun onInit(status: Int) {

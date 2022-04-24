@@ -5,14 +5,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.example.traslatet.databinding.ActivityNumbersBinding
+import com.google.android.gms.ads.AdRequest
 
 class NumbersActivity : AppCompatActivity() {
+    private lateinit var binding:ActivityNumbersBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_numbers)
+        binding = ActivityNumbersBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         MyToolbar().show(this, "Ir a inicio", true);
+        initLoadAds()
     }
 
+    //publicidad
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerNumero.loadAd(adRequest)
+    }
+    //    end publicidad
     //    new
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_contextual, menu);

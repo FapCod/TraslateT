@@ -1,12 +1,15 @@
 package com.example.traslatet
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Vibrator
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import java.text.Normalizer
@@ -24,6 +27,12 @@ class TraslateWriteActivity : AppCompatActivity() {
         //button
         val button = findViewById<Button>(R.id.buttonwrite);
         button.setOnClickListener {
+            val vibrator: Vibrator
+            vibrator = getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            vibrator.vibrate(10)
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_outbtn)
+            button.startAnimation(slideup)
             limpiar();
             convertirALS();
             hideKeyboard(button);
