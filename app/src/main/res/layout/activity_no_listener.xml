@@ -51,10 +51,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="70dp"
 
+        android:layout_marginEnd="15dp"
         android:onClick="viewClicked"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="8dp"
         app:cardElevation="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewSaludos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -83,19 +85,56 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewSobreNosotros"
+        android:id="@+id/cardViewSaludos"
         android:layout_width="175dp"
         android:layout_height="150dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
         android:onClick="viewClicked"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="8dp"
-
         app:cardElevation="14dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardViewTecladoNoEscucha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardViewTecladoNoEscucha"
         app:layout_constraintTop_toTopOf="@+id/cardViewTecladoNoEscucha">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/hands" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oldsansblack"
+                android:text="Frases cortas"
+                android:textColor="@color/color_texto"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSobreNosotros"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:onClick="viewClicked"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewTecladoNoEscucha"
+        app:layout_constraintStart_toStartOf="@+id/cardViewTecladoNoEscucha"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewTecladoNoEscucha">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,7 +159,6 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/bannerNoOyente"

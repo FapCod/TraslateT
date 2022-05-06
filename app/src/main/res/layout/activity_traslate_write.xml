@@ -94,7 +94,9 @@
 
         <GridLayout
             android:id="@+id/contenedor"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:layout_height="match_parent"
             android:alignmentMode="alignBounds"
             android:columnCount="8"

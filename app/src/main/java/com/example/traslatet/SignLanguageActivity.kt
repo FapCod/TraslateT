@@ -1,7 +1,6 @@
 package com.example.traslatet
 
 import android.content.Context
-import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Vibrator
@@ -550,7 +549,7 @@ class SignLanguageActivity : AppCompatActivity(),TextToSpeech.OnInitListener  {
     }
 
 
-    //end music
+
 
     override fun onDestroy() {
         if (tts != null){

@@ -7,13 +7,16 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name=".TraslateTapp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".TraslateTapp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TraslateT">
+        <activity
+            android:name=".GreetActivity"
+            android:exported="false" />
         <activity
             android:name=".NumbersActivity"
             android:parentActivityName=".MainActivity" />
@@ -49,13 +52,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-<!--        para publicidad-->
+        </activity> <!-- para publicidad -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3408207304248121~8037953688" />
-<!--        fin publicidad-->
     </application>
 
 </manifest>

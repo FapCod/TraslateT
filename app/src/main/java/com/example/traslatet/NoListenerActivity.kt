@@ -3,11 +3,8 @@ package com.example.traslatet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import com.example.traslatet.databinding.ActivityMainBinding
 import com.example.traslatet.databinding.ActivityNoListenerBinding
 import com.google.android.gms.ads.AdRequest
 
@@ -34,6 +31,10 @@ class NoListenerActivity : AppCompatActivity() {
         when (v.getId()) {
             R.id.cardViewTecladoNoEscucha-> {
                 val intent = Intent(this,SignLanguageActivity::class.java);
+                startActivity(intent);
+            }
+            R.id.cardViewSaludos-> {
+                val intent = Intent(this,GreetActivity::class.java);
                 startActivity(intent);
             }
             R.id.cardViewSobreNosotros-> {

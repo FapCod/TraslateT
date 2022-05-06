@@ -31,6 +31,7 @@ android {
     }
     buildFeatures{
         viewBinding = true
+        dataBinding true
     }
 }
 
@@ -50,4 +51,6 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:19.7.0'
     //compatibilidad para los celulares
     implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
 }

@@ -58,6 +58,8 @@
             android:id="@+id/contenedorLS"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:alignmentMode="alignBounds"
             android:columnCount="8"
             android:rowCount="40"></GridLayout>

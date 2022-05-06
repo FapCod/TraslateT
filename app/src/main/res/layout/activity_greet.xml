@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context=".NumbersActivity">
+    tools:context=".GreetActivity">
     <include
         android:id="@+id/include"
         layout="@layout/action_bar_toolbar" />
-
-
     <View
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -20,13 +18,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/include"></View>
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="💫Números💫"
+        android:text="💫Frases cortas💫"
         android:textSize="20sp"
         android:textColor="@color/color_title"
         android:fontFamily="@font/oldsansblack"
@@ -65,7 +62,8 @@
                 <TableRow android:weightSum="2">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewA"
+                        android:id="@+id/cardViewBuenosDias"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="0"
@@ -85,16 +83,18 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/cero" />
+                                android:src="@drawable/buenos_dias"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="0"
+                                android:text="Buenos días"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
 
@@ -102,7 +102,8 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewB"
+                        android:id="@+id/cardViewBuenasTardes"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="1"
@@ -122,16 +123,17 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/uno" />
+                                android:src="@drawable/buenas_tardes"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="1"
+                                android:text="Buenas tardes"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
 
@@ -142,7 +144,8 @@
                 <TableRow android:weightSum="2">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewC"
+                        android:id="@+id/cardViewBuenasNoches"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="0"
@@ -162,16 +165,17 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/dos" />
+                                android:src="@drawable/buenas_noches"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="2"
+                                android:text="Buenas noches"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
                         </LinearLayout>
@@ -179,7 +183,8 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewD"
+                        android:id="@+id/cardViewDisculpa"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="1"
@@ -199,16 +204,17 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/tres" />
+                                android:src="@drawable/disculpa"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="3"
+                                android:text="Disculpa"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
                         </LinearLayout>
@@ -219,7 +225,8 @@
                 <TableRow android:weightSum="2">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewE"
+                        android:id="@+id/cardViewGracias"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="0"
@@ -239,16 +246,17 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/cuatro" />
+                                android:src="@drawable/gracias"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="4"
+                                android:text="Gracias"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
                         </LinearLayout>
@@ -256,7 +264,8 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewF"
+                        android:id="@+id/cardViewComoestas"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="1"
@@ -276,16 +285,17 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/cinco" />
+                                android:src="@drawable/como_estas"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="5"
+                                android:text="¿Cómo estás?"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
                         </LinearLayout>
@@ -296,7 +306,8 @@
                 <TableRow android:weightSum="2">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewG"
+                        android:id="@+id/cardViewComoteLLamas"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="0"
@@ -316,16 +327,17 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/seis" />
+                                android:src="@drawable/como_te_llamas"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="6"
+                                android:text="¿Cómo te llamas?"
                                 android:textColor="@color/color_texto"
                                 android:textSize="20sp" />
                         </LinearLayout>
@@ -333,7 +345,8 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewH"
+                        android:id="@+id/cardViewPorFavorMeAyudas"
+                        android:onClick="viewClicked"
                         android:layout_width="175dp"
                         android:layout_height="150dp"
                         android:layout_column="1"
@@ -353,99 +366,25 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
+                            <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="150dp"
                                 android:layout_height="85dp"
-                                android:src="@drawable/siete" />
+                                android:src="@drawable/por_favor_me_ayudas"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/oldsansblack"
-                                android:text="7"
+                                android:text="Por favor¿Me ayudas?"
                                 android:textColor="@color/color_texto"
-                                android:textSize="20sp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
                 </TableRow>
 
-                <TableRow android:weightSum="2">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewI"
-                        android:layout_width="175dp"
-                        android:layout_height="150dp"
-                        android:layout_column="0"
-                        android:layout_marginStart="24dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="15dp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintStart_toStartOf="parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="150dp"
-                                android:layout_height="85dp"
-                                android:src="@drawable/ocho" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/oldsansblack"
-                                android:text="8"
-                                android:textColor="@color/color_texto"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardViewJ"
-                        android:layout_width="175dp"
-                        android:layout_height="150dp"
-                        android:layout_column="1"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="24dp"
-                        android:layout_marginBottom="15dp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintStart_toStartOf="parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="150dp"
-                                android:layout_height="85dp"
-                                android:src="@drawable/nueve" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/oldsansblack"
-                                android:text="9"
-                                android:textColor="@color/color_texto"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                </TableRow>
 
             </TableLayout>
 
@@ -454,14 +393,13 @@
     </ScrollView>
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/bannerNumero"
+        android:id="@+id/bannerGreet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-3408207304248121/3212469586"
+        ads:adUnitId="ca-app-pub-3408207304248121/6911331005"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

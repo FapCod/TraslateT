@@ -86,9 +86,9 @@
         android:id="@+id/scrollvoice"
         android:layout_width="383dp"
         android:layout_height="312dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/borderedondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,11 +98,13 @@
 
         <GridLayout
             android:id="@+id/contenedorvoice"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:alignmentMode="alignBounds"
             android:columnCount="8"
-            android:rowCount="40">
+            android:rowCount="60">
 
         </GridLayout>
 
