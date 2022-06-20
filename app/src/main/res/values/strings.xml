@@ -9,6 +9,6 @@
     <!-- para el navegador    -->
     <string name="navigation_drawer_open">OPEN</string>
     <string name="navigation_drawer_close">CLOSE</string>
-    <string name="caracteresaceptables">ÓÚÁÉÍáóéíúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ 1234567890</string>
+    <string name="caracteresaceptables">ÓÚÁÉÍáóéíúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ 1234567890!,;.@_-+¡?¿</string>
 
 </resources>

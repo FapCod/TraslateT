@@ -79,6 +79,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextwrite" />
 
+    <Button
+        android:id="@+id/buttonlistener"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_voz14"
+        app:layout_constraintEnd_toEndOf="@+id/editTextwrite"
+        app:layout_constraintStart_toEndOf="@+id/buttonwrite"
+        app:layout_constraintTop_toBottomOf="@+id/editTextwrite" />
     <ScrollView
         android:layout_width="383dp"
         android:layout_height="312dp"

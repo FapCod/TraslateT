@@ -6,15 +6,22 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Vibrator
+import android.speech.tts.TextToSpeech
+import android.text.method.KeyListener
+import android.view.KeyEvent
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
+import androidx.cardview.widget.CardView
 import java.text.Normalizer
+import java.util.*
 
-class TraslateWriteActivity : AppCompatActivity() {
+class TraslateWriteActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
+    private var tts: TextToSpeech?= null
+    var cadena = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_traslate_write)
@@ -24,6 +31,8 @@ class TraslateWriteActivity : AppCompatActivity() {
         traslateWrite.setOnClickListener{
             hideKeyboard(traslateWrite);
         }
+//        inicializando el tss
+        tts= TextToSpeech(this,this)
         //button
         val button = findViewById<Button>(R.id.buttonwrite);
         button.setOnClickListener {
@@ -37,6 +46,7 @@ class TraslateWriteActivity : AppCompatActivity() {
             convertirALS();
             hideKeyboard(button);
         }
+        animarBoton()
     }
 
     //    new
@@ -75,6 +85,14 @@ class TraslateWriteActivity : AppCompatActivity() {
         val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken,0);
     }
+
+    //obtener evento cuando presionan el eliminar en teclado normal
+
+
+
+
+
+
 
     //Convertir LS
     private fun convertirALS() {
@@ -466,5 +484,54 @@ class TraslateWriteActivity : AppCompatActivity() {
     }
     //fin empty grid
 
+//    funciones para escuchar audio
+//funciones
+override fun onInit(status: Int) {
+    if (status==TextToSpeech.SUCCESS){
+        var result = tts!!.setLanguage(Locale.getDefault())
+        if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+            Toast.makeText(this,"Lenguaje no soportado", Toast.LENGTH_SHORT).show()
+        }
+    }else{
+        Toast.makeText(this,"Iniciacion fallida", Toast.LENGTH_SHORT).show()
+    }
+}
+    override fun onDestroy() {
+        if (tts != null){
+            tts!!.stop()
+            tts!!.shutdown()
+        }
+        super.onDestroy()
+    }
+
+    private fun speakOut(text:String){
+        tts!!.speak(text,TextToSpeech.QUEUE_FLUSH,null,"")
+    }
+    fun listening(view: View){
+        val editText = findViewById<EditText>(R.id.editTextwrite);
+        var nuevacadena = (editText.text).trim();
+        if (nuevacadena.isEmpty()){
+            Toast.makeText(this,"No hay nada que decir", Toast.LENGTH_SHORT).show()
+        }else{
+            speakOut(nuevacadena.toString())
+            limpiar()
+
+        }
+
+//        Toast.makeText(this,cadena, Toast.LENGTH_SHORT).show();
+        cadena=""
+    }
+    private fun animarBoton(){
+        val vibrator:Vibrator
+        vibrator = getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        val escuchar = findViewById<Button>(R.id.buttonlistener)
+        escuchar.setOnClickListener {
+            val slideup = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.zoom_outbtn)
+            escuchar.startAnimation(slideup)
+            vibrator.vibrate(10)
+            listening(escuchar)
+        }
+    }
 
 }
